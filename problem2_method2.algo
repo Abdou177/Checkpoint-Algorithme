@@ -1,0 +1,16 @@
+Set1:= [12, 13, 6, 10]
+Set2:= [13, 10, 16, 15]
+arr=Set2.concat(Set1)
+sum:=0;
+var hashT = new HashTable();
+
+const filteredSet := Set1.filter(value => Set2.includes(value));
+for (let i=0;i<arr.length;i++){
+    if (Set1.filter(value => Set2.includes(value))){
+        hashT.insert(arr[i],2)
+  
+}
+hashT.insert(arr[i],2)
+}
+
+sum+=hashT.retrieve(2)*2

@@ -1,0 +1,12 @@
+array1= [3, 1, 7, 9]
+array2= [2, 4, 1, 9, 3]
+arr=array2.concat(array1)
+sum=0;
+var hashT = new HashTable();
+for( let i=0;i<arr.length;i++){
+if (array1.filter(value => array2.includes(value))){
+    hashT.insert(arr[i],2)
+}
+hashT.insert(arr[i],1)
+}
+sum+=hashT.retrieve(1);

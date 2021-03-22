@@ -1,0 +1,11 @@
+
+Set1:= [12, 13, 6, 10]
+Set2:= [13, 10, 16, 15]
+sum:=0;
+const filteredSet := Set1.filter(value => Set2.includes(value));
+for (let i=0;i<filteredSet.length;i++){
+  sum+:=filteredSet[i]*2;
+
+}
+
+write(sum)
