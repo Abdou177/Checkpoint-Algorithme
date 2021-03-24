@@ -1,18 +1,17 @@
-array1= [3, 1, 7, 9]
-array2= [2, 4, 1, 9, 3]
-const filteredArray = array1.filter(value => array2.includes(value));
-console.log(filteredArray)
+ALGORITHM problem1_method1
+VAR
+    array1= [3, 1, 7, 9]
+    array2= [2, 4, 1, 9, 3]
+    sum=0
+BEGIN
+    filteredArray = array1.filter(value => array2.includes(value))
+    arr=array2.concat(array1)
 
-arr=array2.concat(array1)
+    myArray = arr.filter( ( el ) => !filteredArray.includes( el ) )
+    FOR i FROM 0 TO myArray.length DO
+    sum+=myArray[i]
+    END_FOR
+    write(sum)
 
-myArray = arr.filter( ( el ) => !filteredArray.includes( el ) );
-
-console.log(myArray)
-
- sum=0
-
- for (i=0;i<myArray.length;i++){
-sum+=myArray[i]
-}
-console.log(sum)
+END
 

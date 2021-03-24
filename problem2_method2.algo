@@ -1,16 +1,20 @@
-Set1:= [12, 13, 6, 10]
-Set2:= [13, 10, 16, 15]
-arr=Set2.concat(Set1)
-sum:=0;
-var hashT = new HashTable();
-
-const filteredSet := Set1.filter(value => Set2.includes(value));
-for (let i=0;i<arr.length;i++){
-    if (Set1.filter(value => Set2.includes(value))){
+ALGORITHM problem2_method2
+VAR
+    Set1= [12, 13, 6, 10]
+    Set2= [13, 10, 16, 15]
+    sum=0
+BEGIN
+    arr=Set2.concat(Set1)
+    hashT = new HashTable()
+    filteredSet = Set1.filter(value => Set2.includes(value))
+    FOR i FROM 0 TO arr.length DO
+    IF (Set1.filter(value => Set2.includes(value))) THEN
         hashT.insert(arr[i],2)
-  
-}
-hashT.insert(arr[i],2)
-}
+    ELSE
+        hashT.insert(arr[i],2)
+    END_IF
+    END_FOR
+    sum+=hashT.retrieve(2)*2
 
-sum+=hashT.retrieve(2)*2
+END
+

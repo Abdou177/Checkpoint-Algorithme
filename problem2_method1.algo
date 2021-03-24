@@ -1,11 +1,12 @@
-
-Set1:= [12, 13, 6, 10]
-Set2:= [13, 10, 16, 15]
-sum:=0;
-const filteredSet := Set1.filter(value => Set2.includes(value));
-for (let i=0;i<filteredSet.length;i++){
-  sum+:=filteredSet[i]*2;
-
-}
-
-write(sum)
+ALGORITHM problem2_method1
+VAR
+    Set1= [12, 13, 6, 10]
+    Set2= [13, 10, 16, 15]
+    sum=0;
+BEGIN
+    filteredSet = Set1.filter(value => Set2.includes(value))
+    FOR i FROM 0 to filteredSet.length DO
+    sum+=filteredSet[i]*2
+    END_FOR
+    write(sum)
+END
